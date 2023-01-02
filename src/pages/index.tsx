@@ -4,10 +4,31 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Header from '../components/layouts/Header'
 import Hero from '../components/Hero'
+import Features from '../components/Features'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const features = [
+    {
+      title: "Customization Powers",
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+    },
+    {
+      title: "Customization Powers",
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+    },
+    {
+      title: "Customization Powers",
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+    },
+    {
+      title: "Customization Powers",
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+    }
+  ]  
+
   return (
     <>
       <Head>
@@ -16,9 +37,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} m-4 static max-w-7xl`}>
+    
+      <main className={`flex flex-col gap-12 min-h-screen m-auto static`}>
         <Header/>
         <Hero/>
+        <Features features={features}
+        imageUrl="/content.png"
+        />
       </main>
     </>
   )
