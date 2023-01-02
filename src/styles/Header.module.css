@@ -1,0 +1,7 @@
+.headerText{
+    color: white;
+    mix-blend-mode: difference !important;
+}
+.main{
+    mix-blend-mode: difference;
+}
