@@ -36,7 +36,7 @@ const About: React.FC = () => {
         <div className="flex flex-col gap-6 md:gap-4">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-4">
             {aboutCards.map((card, i)=>(
-              <div className={`${card.color.bg} ${card.color.text} rounded-3xl pt-10 overflow-hidden flex flex-col justify-between`}>
+              <div key={i} className={`${card.color.bg} ${card.color.text} rounded-3xl pt-10 overflow-hidden flex flex-col justify-between`}>
                 <div className='text-center mx-auto w-3/4 flex flex-col gap-2 py-8'>
                   <h4 className='text-lg font-semibold'>
                     {card.title}

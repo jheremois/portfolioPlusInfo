@@ -39,7 +39,6 @@ const Features: React.FC<FeaturesProps> = ({ features, imageUrl }) => {
                     <img src={imageUrl} alt="Feature image" 
                         className="
                             md:min-h-full md:w-96 s object-cover rounded-2xl
-                            
                         " 
                     />
                     <div 
@@ -47,8 +46,8 @@ const Features: React.FC<FeaturesProps> = ({ features, imageUrl }) => {
                             grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-4
                         "
                     >
-                        {features.map((feature) => (
-                        <div key={feature.title} className="bg-white px-7 py-9 md:px-7 md:py-7 rounded-2xl flex flex-col gap-4">
+                        {features.map((feature, i) => (
+                        <div key={feature.title + i} className="bg-white px-7 py-9 md:px-7 md:py-7 rounded-2xl flex flex-col gap-4">
                             <div 
                                 className="
                                     icon bg-primary h-9 w-9 rounded-md
