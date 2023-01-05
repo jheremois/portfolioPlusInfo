@@ -8,6 +8,7 @@ import Features from '../components/Features'
 import { StarIcon, SparklesIcon, PencilSquareIcon, ShareIcon } from '@heroicons/react/24/solid'
 import About from '../components/About'
 import GoToApp from '../components/GoToApp'
+import Footer from '../components/layouts/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,6 +54,7 @@ export default function Home() {
         />
         <About/>
         <GoToApp/>
+        <Footer/>
       </main>
     </>
   )

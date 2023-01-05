@@ -9,6 +9,7 @@ const Header: React.FC = () => {
       <div className="h-0"></div>
       <header 
         className={`
+          z-50
           ${styles.headerText} fixed w-full
         `}
       >
