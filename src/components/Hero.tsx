@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Hero.module.css'
+import { ArrowRightIcon } from '@heroicons/react/24/solid'
+
 
 const Hero: React.FC = () => {
   return (
@@ -8,33 +10,41 @@ const Hero: React.FC = () => {
       <div 
         className={`
           ${styles.heroBg}
-          m-4  flex flex-col justify-center items-center
-          rounded-2xl px-4 py-6 md:flex-row md:px-8 md:py-12
+          my-4 flex flex-col justify-center items-center
+          rounded-3xl px-4 py-14
+          md:flex-row md:px-8 md:py-16 mx-3 md:mx-8 2xl:mx-0
         `}
       >
         <div className="portfoliPlus_hero_lSide mb-12">
-          <div className="text-4xl md:text-5xl font-bold">
-            <div className='underline underline-offset-1'>
-              CREATING YOUR
-            </div>
-            PORTFOLIO NEVER BEEN THAT EASY
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold md:leading-11 tracking-wide">
+              <div className="">
+                CREATING YOUR
+              </div>
+              <div className="">
+                PORTFOLIO NEVER BEEN THAT EASY
+              </div>
+          </h1>
           <div className="mt-6 md:mt-9">
-            <Link href="/get-started" 
+            <Link href="/" 
             >
               <button
                 className="
-                  px-4 py-2 font-semibold rounded-full text-lg
-                  bg-primary text-white w-full md:w-fit
+                  px-5 py-3 font-semibold rounded-full text-xl md:text-lg
+                  bg-primary text-white w-fit
+                  flex items-center gap-1
                 "
               >
                 Get started
+                <ArrowRightIcon scale={1} width="22"/>
               </button>
             </Link>
           </div>
         </div>
         <div className="portfoliPlus_hero_rSide">
-          <img src="/portfolioplus_hero.png" alt="" />
+          <img 
+            src="/portfolioplus_hero.png" alt=""
+            className='-translate-x-3 md:translate-x-0'
+          />
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/layouts/Header'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
+import { StarIcon, SparklesIcon, PencilSquareIcon, ShareIcon } from '@heroicons/react/24/solid'
+import About from '../components/About'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,19 +15,23 @@ export default function Home() {
   const features = [
     {
       title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
+      icon: <SparklesIcon width={18}/>
     },
     {
       title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
+      icon: <StarIcon width={18}/>
     },
     {
       title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
+      icon: <PencilSquareIcon width={18}/>
     },
     {
       title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme."
+      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
+      icon: <ShareIcon width={18}/>
     }
   ]  
 
@@ -44,6 +50,7 @@ export default function Home() {
         <Features features={features}
         imageUrl="/content.png"
         />
+        <About/>
       </main>
     </>
   )
