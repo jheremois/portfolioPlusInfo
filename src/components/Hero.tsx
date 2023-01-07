@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       <div 
         className={`
           ${styles.heroBg}
-          my-4 flex flex-col justify-center items-center
+          flex flex-col justify-center items-center
           rounded-3xl px-4 py-14
           md:flex-row md:px-8 md:py-16 mx-3 md:mx-8 2xl:mx-0
         `}
@@ -32,6 +32,8 @@ const Hero: React.FC = () => {
                   px-5 py-3 font-semibold rounded-full text-xl md:text-lg
                   bg-primary text-white w-fit
                   flex items-center gap-1
+                  duration-150
+                  hover:bg-primaryAlt
                 "
               >
                 Get started

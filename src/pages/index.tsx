@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Header from '../components/layouts/Header'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
-import { StarIcon, SparklesIcon, PencilSquareIcon, ShareIcon } from '@heroicons/react/24/solid'
 import About from '../components/About'
 import GoToApp from '../components/GoToApp'
 import Footer from '../components/layouts/Footer'
@@ -13,29 +10,6 @@ import Footer from '../components/layouts/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
-  const features = [
-    {
-      title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
-      icon: <SparklesIcon width={18}/>
-    },
-    {
-      title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
-      icon: <StarIcon width={18}/>
-    },
-    {
-      title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
-      icon: <PencilSquareIcon width={18}/>
-    },
-    {
-      title: "Customization Powers",
-      description: "Make your portfolio stand out with your own logo, banner image, and color scheme.",
-      icon: <ShareIcon width={18}/>
-    }
-  ]  
 
   return (
     <>
@@ -46,13 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-      <main className={`flex flex-col gap-12 min-h-screen m-auto static`}>
+      <main className={`flex flex-col gap-6 md:gap-4 min-h-screen m-auto static`}>
         <Header/>
         <Hero/>
-        <Features features={features}
-        imageUrl="/content.png"
-        />
         <About/>
+        <Features/>
         <GoToApp/>
         <Footer/>
       </main>

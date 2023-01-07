@@ -5,30 +5,32 @@ const GoToApp: React.FC = () => {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div className="max-w-7xl mx-auto py-5 md:py-6 w-full">
+    <div className="max-w-7xl mx-auto w-full">
       <div className="mx-3 md:mx-8 2xl:mx-0 rounded-3xl overflow-hidden">
         <div
-        style={{
-          width: '100%',
-          position: 'relative'
-        }}
+        className="relative w-full"
         >
           <div
             style={{
-            height: '85vh',
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+              height: 450
             }}
+            className={`
+              w-full flex items-center
+              justify-center
+            `}
           >
             <button 
-                style={{ zIndex: 1 }}
                 onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=> setIsHovering(false)}
-                className="bg-primary py-2 px-4 flex items-center gap-2 rounded-full text-white font-medium text-lg"
+                className="
+                  z-10 bg-primary py-2
+                  duration-150
+                  hover:bg-primaryAlt
+                  px-4 flex items-center gap-2
+                  rounded-full text-white font-medium text-lg
+                "
             >
-                Create your portfolio
-                <ArrowTopRightOnSquareIcon width={20}/>
+              Create your portfolio
+              <ArrowTopRightOnSquareIcon width={20}/>
             </button>
             <div 
               style={{

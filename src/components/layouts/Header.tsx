@@ -6,7 +6,7 @@ import { ArrowUpRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24
 const Header: React.FC = () => {
   return (
     <>
-      <div className="h-0"></div>
+      <div className="h-12"></div>
       <header 
         className={`
           z-50
@@ -22,18 +22,20 @@ const Header: React.FC = () => {
           </div>
 
           <div className={`col-span-2 text-center text-sm font-thin`}>
-            Geekguys Devs &copy; 2023
+            {/* Geekguys Devs &copy; 2023 */}
           </div>
           <div className="col-span-3 flex justify-end">
             <Link href="/get-started" 
                 className="
-                  font-thin
-                    px-2 whitespace-nowrap
-                    border rounded-full flex
-                    gap-1
+                  font-light
+                  px-2 whitespace-nowrap
+                  border rounded-full flex
+                  gap-1 duration-150
+                  hover:bg-white
+                  hover:text-black
                 "
             >
-              GET STARTED
+              Get started
               <ArrowTopRightOnSquareIcon width={15}/>
             </Link>
           </div>
