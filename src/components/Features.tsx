@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { StarIcon, SparklesIcon, PencilSquareIcon, ShareIcon } from '@heroicons/react/24/solid'
+import { StarIcon, SparklesIcon, ChartBarIcon } from '@heroicons/react/24/solid'
 
 const Features: React.FC = () => {
 
@@ -7,14 +7,14 @@ const Features: React.FC = () => {
 
     const features = [
         {
-          title: "Customization Powers",
-          description: "Make your portfolio stand out with your own logo, banner image, and color scheme Make your portfolio stand out with your own logo, banner image, and color scheme your portfolio stand out with your own logo, banner image, and color scheme.",
-          icon: <SparklesIcon width={18}/>,
+          title: "Track Your Success",
+          description: "With Portfolioplus, you can track your success and see how your portfolio is performing. Our Stats feature provides valuable insights into your portfolio views, engagement, and more. See how many people are visiting your portfolio and which projects are getting the most attention.",
+          icon: <ChartBarIcon width={18}/>,
           isActive: 1
         },
         {
-          title: "Customization Powers",
-          description: "Make your portfolio stand out with your own logo, banner image, and color scheme Make your portfolio stand out with your own logo, banner image, and color scheme your portfolio stand out with your own logo, banner image, and color scheme.",
+          title: "Get Feedback",
+          description: "Portfolioplus offers a unique feature called Raters, which allows you to get feedback from your customers and show your appreciation for their business. Raters are public links that you can share with your customers, who can then rate your services using a 5-star rating system and even leave a tip if they wish.",
           icon: <StarIcon width={18}/>,
           isActive: 2
         }

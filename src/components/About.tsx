@@ -7,13 +7,13 @@ const About: React.FC = () => {
     {
       color: {text: "text-white", bg: "bg-primaryAlt"},
       title: "Looks good on any shape",
-      description: "Our interface is highly responsive so your portfolio looks awesome on any devise",
+      description: "With Portfolioplus, you can be confident that your portfolio will look great on any device. No matter where your visitors are accessing your portfolio from Show off your work with Portfolioplus.",
       img: "imgs/pcPhoneFrame.png"
     },
     {
       color: {text: "text-black", bg: "bg-lightGray"},
       title: "Let the world see your work",
-      description: "Fill your portfolio with your experience, latest projects and all your work",
+      description: "Portfolioplus is the perfect platform for showcasing your skills and achievements to the world. Fill your portfolio with your experience, latest projects and all your work.",
       img: "imgs/phonesFrame.png"
     }
   ]
@@ -64,7 +64,7 @@ const About: React.FC = () => {
                 Impress with a Awesome Portfolio
               </h4>
               <p>
-                In today's competitive job market, it's important to make a strong impression with your portfolio. With [Your App's Name], you can create a portfolio that reflects your unique talents and style.
+              In today's competitive job market, it's important to make a strong impression with your portfolio. Whether you're an artist, designer, photographer, or any other creative professional, Portfolioplus has the tools you need to create an awesome portfolio that will impress your potential clients, employers, and more.
               </p>
             </div>
             <div className="col-span-3 flex items-end justify-end">
