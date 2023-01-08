@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/Header.module.css'
 import { ArrowUpRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const Header: React.FC = () => {
             max-w-7xl m-auto px-3 md:px-8 2xl:px-0
           ">
           <div className="col-span-3">
-            <img src="/logo_text.svg" alt="Logo" className="h-full" />
+            <Image src="/logo_text.svg" alt="Logo" className="h-full" />
           </div>
 
           <div className={`col-span-2 text-center text-sm font-thin`}>

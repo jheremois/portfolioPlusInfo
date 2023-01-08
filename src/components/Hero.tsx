@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Hero.module.css'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image';
 
 
 const Hero: React.FC = () => {
@@ -43,7 +44,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="portfoliPlus_hero_rSide">
-          <img 
+          <Image
             src="/portfolioplus_hero.png" alt=""
             className='-translate-x-3 md:translate-x-0'
           />

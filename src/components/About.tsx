@@ -1,5 +1,6 @@
-import React from 'react';
-import { StarIcon } from '@heroicons/react/24/solid'
+import React from "react";
+import { StarIcon } from "@heroicons/react/24/solid"
+import Image from "next/image";
 
 const About: React.FC = () => {
   const lol = [{lol: 2}, {lol: 3}]
@@ -27,7 +28,7 @@ const About: React.FC = () => {
             flex-col gap-3 mb-10
           "
         >
-          <h2 className='text-2xl font-bold'>
+          <h2 className="text-2xl font-bold">
             Showcase Your Skills Online
           </h2>
           <p>
@@ -38,8 +39,8 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-4">
             {aboutCards.map((card, i)=>(
               <div key={i} className={`${card.color.bg} ${card.color.text} rounded-3xl pt-10 overflow-hidden flex flex-col justify-between`}>
-                <div className='text-center mx-auto w-3/4 flex flex-col gap-2 py-8'>
-                  <h4 className='text-lg font-bold'>
+                <div className="text-center mx-auto w-3/4 flex flex-col gap-2 py-8">
+                  <h4 className="text-lg font-bold">
                     {card.title}
                   </h4>
                   <p>
@@ -47,7 +48,7 @@ const About: React.FC = () => {
                   </p>
                 </div>
 
-                <img src={card.img} alt="" className={i == 0?'mx-auto w-11/12':""} />
+                <Image src={card.img} alt="" className={i == 0?"mx-auto w-11/12":""} />
               </div>
             ))}
           </div>
@@ -59,16 +60,16 @@ const About: React.FC = () => {
               md:text-left
             "
           >
-            <div className='mx-auto flex flex-col gap-4 p-8 col-span-2'>
-              <h4 className='text-4xl font-semibold'>
+            <div className="mx-auto flex flex-col gap-4 p-8 col-span-2">
+              <h4 className="text-4xl font-semibold">
                 Impress with a Awesome Portfolio
               </h4>
               <p>
-              In today's competitive job market, it's important to make a strong impression with your portfolio. Whether you're an artist, designer, photographer, or any other creative professional, Portfolioplus has the tools you need to create an awesome portfolio that will impress your potential clients, employers, and more.
+              In today&apos;s competitive job market, it&apos;s important to make a strong impression with your portfolio. Whether you&apos;re an artist, designer, photographer, or any other creative professional, Portfolioplus has the tools you need to create an awesome portfolio that will impress your potential clients, employers, and more.
               </p>
             </div>
             <div className="col-span-3 flex items-end justify-end">
-              <img src="imgs/pcFrame.png" alt="" />
+              <Image src="imgs/pcFrame.png" alt="" />
             </div>
           </div>
         </div>

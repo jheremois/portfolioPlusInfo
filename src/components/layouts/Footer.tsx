@@ -1,6 +1,7 @@
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="grid gap-10 md:grid-cols-3 md:gap-36 md:text-sm text-base">
                 <div className="flex flex-col gap-6 justify-start">
                     <div className='h-10'>
-                        <img src="logo_text.svg" alt="" className='h-full'/>
+                        <Image src="logo_text.svg" alt="" className='h-full'/>
                     </div>
                     <p>
                     Create and manage professional online portfolios with Portfolioplus. The ultimate tool for showcasing your skills and achievements.  

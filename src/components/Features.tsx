@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { StarIcon, SparklesIcon, ChartBarIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image';
 
 const Features: React.FC = () => {
 
@@ -30,7 +31,7 @@ const Features: React.FC = () => {
                             md:grid-cols-2
                         "
                     >
-                        <img src={
+                        <Image src={
                             cardActive == 2
                             ?
                                 'imgs/profilePortfolioPlus.png'
