@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../../styles/Header.module.css'
-import { ArrowUpRightIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image';
 
 const Header: React.FC = () => {
@@ -9,9 +8,13 @@ const Header: React.FC = () => {
     <>
       <div className="h-12"></div>
       <header 
+        style={{
+            color: "white",
+            mixBlendMode: "difference"
+        }}
         className={`
           z-50
-          ${styles.headerText} fixed w-full
+          fixed w-full
         `}
       >
         <div className="h-16
