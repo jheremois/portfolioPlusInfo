@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/Hero.module.css'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image';
 
@@ -9,8 +8,10 @@ const Hero: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <div 
+        style={{
+          background: 'radial-gradient(50% 50% at 50% 50%, #F4F7FD 0%, #EBEFF4 100%)'
+        }}
         className={`
-          ${styles.heroBg}
           flex flex-col justify-center items-center
           rounded-3xl px-4 py-14
           md:flex-row md:px-8 md:py-16 mx-3 md:mx-8 2xl:mx-0
