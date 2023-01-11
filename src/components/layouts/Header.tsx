@@ -6,23 +6,32 @@ import Image from 'next/image';
 const Header: React.FC = () => {
   return (
     <>
-      <div className="h-12"></div>
+      <div className="h-8"></div>
       <header 
         style={{
-            color: "white",
-            mixBlendMode: "difference"
+          /* mixBlendMode: "difference", */
+          /* backdropFilter: "blur(10px)" */
         }}
         className={`
           z-50
+          bg-opacity-40
+          bg-white
           fixed w-full
+          backdrop-blur-md
         `}
+
       >
-        <div className="h-16
+        <div className="
+            h-11
             grid grid-cols-8 items-center
             max-w-7xl m-auto px-3 md:px-8 2xl:px-0
           ">
           <div className="col-span-3">
-            <Image src="/logo_text.svg" alt="Logo" className="h-full" />
+            <Image 
+              width={150}
+              height={0}
+              src="/logo_atl.svg" alt="Logo"
+            />
           </div>
 
           <div className={`col-span-2 text-center text-sm font-thin`}>

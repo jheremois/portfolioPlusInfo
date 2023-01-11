@@ -31,12 +31,15 @@ const Features: React.FC = () => {
                             md:grid-cols-2
                         "
                     >
-                        <Image src={
+                        <Image 
+                        width={800}
+                        height={800}
+                        src={
                             cardActive == 2
                             ?
-                                'imgs/profilePortfolioPlus.png'
+                                '/imgs/profilePortfolioPlus.png'
                             :
-                                'imgs/custPowerPortfolioPlus.png'
+                                '/imgs/custPowerPortfolioPlus.png'
                         } alt="Feature image" 
                             className="
                                 rounded-2xl

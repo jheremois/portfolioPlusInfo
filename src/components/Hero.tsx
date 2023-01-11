@@ -46,6 +46,11 @@ const Hero: React.FC = () => {
         </div>
         <div className="portfoliPlus_hero_rSide">
           <Image
+            width={638}
+            height={638}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             src="/portfolioplus_hero.png" alt=""
             className='-translate-x-3 md:translate-x-0'
           />
