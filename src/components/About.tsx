@@ -9,13 +9,13 @@ const About: React.FC = () => {
       color: {text: "text-white", bg: "bg-primaryAlt"},
       title: "Looks good on any shape",
       description: "With Portfolioplus, you can be confident that your portfolio will look great on any device. No matter where your visitors are accessing your portfolio from Show off your work with Portfolioplus.",
-      img: "imgs/pcPhoneFrame.png"
+      img: "/imgs/pcPhoneFrame.png"
     },
     {
       color: {text: "text-black", bg: "bg-lightGray"},
       title: "Let the world see your work",
       description: "Portfolioplus is the perfect platform for showcasing your skills and achievements to the world. Fill your portfolio with your experience, latest projects and all your work.",
-      img: "imgs/phonesFrame.png"
+      img: "/imgs/phonesFrame.png"
     }
   ]
   return (
@@ -48,7 +48,11 @@ const About: React.FC = () => {
                   </p>
                 </div>
 
-                <Image src={card.img} alt="" className={i == 0?"mx-auto w-11/12":""} />
+                <Image 
+                  width={900}
+                  height={900}
+                  src={card.img} alt="" className={i == 0?"mx-auto w-11/12":""}
+                 />
               </div>
             ))}
           </div>
@@ -69,7 +73,11 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="col-span-3 flex items-end justify-end">
-              <Image src="imgs/pcFrame.png" alt="" />
+              <Image 
+                width={800}
+                height={800}
+                src="/imgs/pcFrame.png" alt="" 
+              />
             </div>
           </div>
         </div>

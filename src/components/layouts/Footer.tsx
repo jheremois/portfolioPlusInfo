@@ -11,7 +11,11 @@ const Footer: React.FC = () => {
             <div className="grid gap-10 md:grid-cols-3 md:gap-36 md:text-sm text-base">
                 <div className="flex flex-col gap-6 justify-start">
                     <div className='h-10'>
-                        <Image src="logo_text.svg" alt="" className='h-full'/>
+                        <Image 
+                            width={208}
+                            height={108}
+                            src="logo_text.svg" alt=""
+                        />
                     </div>
                     <p>
                     Create and manage professional online portfolios with Portfolioplus. The ultimate tool for showcasing your skills and achievements.  
