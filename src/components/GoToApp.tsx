@@ -1,4 +1,5 @@
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const GoToApp: React.FC = () => {
@@ -19,7 +20,9 @@ const GoToApp: React.FC = () => {
               justify-center
             `}
           >
-            <button 
+            <Link
+                href={'https://portfolioplus-dun.vercel.app/'} 
+                target='_blank'
                 onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=> setIsHovering(false)}
                 className="
                   z-10 bg-primary py-2
@@ -31,7 +34,7 @@ const GoToApp: React.FC = () => {
             >
               Create your portfolio
               <ArrowTopRightOnSquareIcon width={20}/>
-            </button>
+            </Link>
             <div 
               style={{
                 backgroundImage: `url(content.png)`,

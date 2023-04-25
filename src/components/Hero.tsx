@@ -27,7 +27,9 @@ const Hero: React.FC = () => {
               </div>
           </h1>
           <div className="mt-6 md:mt-9">
-            <Link href="/" 
+            <Link
+              href={'https://portfolioplus-dun.vercel.app/'} 
+              target='_blank'
             >
               <button
                 className="

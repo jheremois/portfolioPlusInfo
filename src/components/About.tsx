@@ -65,11 +65,11 @@ const About: React.FC = () => {
             "
           >
             <div className="mx-auto flex flex-col gap-4 p-8 col-span-2">
-              <h4 className="text-4xl font-semibold">
+              <h4 className="text-5xl font-semibold">
                 Impress with a Awesome Portfolio
               </h4>
               <p>
-              In today&apos;s competitive job market, it&apos;s important to make a strong impression with your portfolio. Whether you&apos;re an artist, designer, photographer, or any other creative professional, Portfolioplus has the tools you need to create an awesome portfolio that will impress your potential clients, employers, and more.
+                In today&apos;s competitive job market, it&apos;s important to make a strong impression with your portfolio. Whether you&apos;re an artist, designer, photographer, or any other creative professional, Portfolioplus has the tools you need to create an awesome portfolio that will impress your potential clients, employers, and more.
               </p>
             </div>
             <div className="col-span-3 flex items-end justify-end">

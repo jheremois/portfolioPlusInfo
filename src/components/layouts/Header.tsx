@@ -38,7 +38,9 @@ const Header: React.FC = () => {
             {/* Geekguys Devs &copy; 2023 */}
           </div>
           <div className="col-span-3 flex justify-end">
-            <Link href="/get-started" 
+            <Link
+                href={'https://portfolioplus-dun.vercel.app/'} 
+                target='_blank'
                 className="
                   font-light
                   px-2 whitespace-nowrap
